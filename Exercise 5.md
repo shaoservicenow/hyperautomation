@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Exercise 5 Testing
-nav_order: 5
+nav_order: 6
 ---
 
 # Exercise 5: Testing what we built
