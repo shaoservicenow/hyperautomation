@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Exercise 3 Process Automation Designer
-nav_order: 4
+title: Exercise 4 Process Automation Designer
+nav_order: 5
 ---
 
 # Exercise 4: Process Automation Designer

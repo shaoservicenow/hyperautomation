@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Exercise 2 Integration Hub
-nav_order: 3
+title: Exercise 3 Integration Hub
+nav_order: 4
 ---
 
 # Exercise 3: Integration Hub
