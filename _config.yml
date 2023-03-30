@@ -2,7 +2,7 @@ remote_theme: just-the-docs/just-the-docs
 logo: "servicenow-logo.png"
 back_to_top: true
 back_to_top_text: "Back to top"
-footer_content: Shao Wei Tan, 16 October 2022, based on the San Diego release.
+footer_content: Shao Wei Tan, 30 March 2023, based on the Utah release.
 search_enabled: true
 search:
   # Split pages into sections that can be searched individually
