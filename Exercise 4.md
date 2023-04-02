@@ -8,6 +8,10 @@ nav_order: 5
 
 Even with automation, there are still activities that the Supplier Management team has to manually oversee which cannot be avoided. One of these processes is to check the ESG compliance of suppliers. In this exercise, we will be building on top of a playbook to assign a task to the ESG compliance team so that a suppliers commitments are tracked and accounted for.
 
+Playbooks allow users to interact with a business workflow in real time from within Workspace. Users can utilize Playbook to update records, upload attachments, and complete tasks across multiple workflow activities in line.
+
+![relative](images/pbpreview.png)
+
 ## Building in Process Automation Designer
 
 1. Navigate back to the main ServiceNow UI
@@ -28,11 +32,37 @@ Even with automation, there are still activities that the Supplier Management te
 
 1. Enter **ESG assessment activities to be processed** under **Description** (2)
 
-1. Click **Save and close**
+1. Click **Save** (3)
 
     ![relative](images/padsteps.png)
 
 1. Under the newly created **ESG assessment** lane, click **Add an activity**
+
+1. In the pop-up, search **wait for condition**, and click **Wait For Condition** under **Commmon Activities**
+
+1. On the right side bar, change **Label** to **Verification complete** (1), then enter description **License verification complete** (2)
+
+1. Click **Automation** (3)
+
+    ![relative](images/verificationdone.png)
+
+1. On the **Record** field, click the data pill picker (1), expand **Trigger - Business License** (2), click **Business License Record** (3)
+
+    ![relative](images/3cond.png)
+
+1. Click **Add Condition**
+
+    ![relative](images/addcond.png)
+
+1. On the Modify conditions pop-up, set **Registry verified** to **is true**
+
+1. Click **Modify**
+
+    ![relative](images/regvertreue.png)
+
+1. Click **Save**
+
+1. Click **Add activity** under the **Verification complete** card
 
 1. In the pop-up, search **create task**, and click **Create Task** under **Commmon Activities**
 
@@ -56,7 +86,9 @@ Even with automation, there are still activities that the Supplier Management te
 
     ![relative](images/completeactivity.png)
 
-1. On the top right of the screen, click **Activate**
+1. Click **Save** (1)
+
+1. On the top right of the screen, click **Activate** (2)
 
     ![relative](images/activatepad.png)
 

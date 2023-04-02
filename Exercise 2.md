@@ -18,11 +18,22 @@ The first part requires us to get the attachments to process via emails from sup
 
     ![relative](images/openaes.png)
 
+    > App Engine Studio is a low-code visual development platform that allows citizen developers to create business-critical workflow apps in a complete low-code experience.
+
 1. In the **My recent apps** section, click **Supplier Management**
 
     ![relative](images/openapp.png)
 
-1. You should notice that there are already application files present, such as tables and some pre-built flows
+1. If this is your first time within App Engine Studio, have a quick look at the 4 major sections on the **App Home** tab
+
+    | Reference | Section | Description |
+    | - | ----------- | -- |
+    | 1 | Data | This is where you will add data tables to your custom application, either by creating a brand new table, importing a spreadhseet, extending an existing table, from a PDF file, and even through a data integration. A **Business License** table has already been created for you.|
+    | 2 | Experience | Create access to the custom tables with different experiences, such as via workspaces, catalog items, mobile applications and even standalone portals. Notice that a **Supplier Management Workspace** was created for you, and you will use this in the final testing exercise|
+    | 3 | Logic and automation | Arguably where you will spend the most time during custom application creation. Add Flows, Process Automations, Email notifications and more in this section. You will be building on top of some flows that have been created|
+    | 4 | Security | Security is where you will create custom user roles for the application scope. This will not be covered in the context of this lab.|
+
+    ![relative](images/aesexplain.png)
 
 1. Under **Logic and Automation**, click **Process Supplier Email**
 
@@ -64,6 +75,8 @@ The first part requires us to get the attachments to process via emails from sup
 
     ![relative](images/activateflow.png)
 
+With this workflow active, any time a new email is received with the keyword license, it would automatically transfer any attachments in the email to a new business license record that is created.
+
 ## Processing the attachment via Document Intelligence
 
 The second part walks through the processing of the business license using Document Intelligence
@@ -92,6 +105,8 @@ The second part walks through the processing of the business license using Docum
 
 1. Click the **Document Tasks** tab (1)
 
+    > The list of document tasks were what was previously used to train this use case model via ServiceNow's AI/ML training servers. In the context of this lab, the training results were manually imported for your usage and understanding.
+
 1. Click the first record (2) to open the **Edit the document Task** modal
 
     ![relative](images/doctask.png)
@@ -102,7 +117,7 @@ The second part walks through the processing of the business license using Docum
 
 1. A new tab will open, with the Document Intelligence Workspace loaded
 
-    The Document Intelligence Workspace is used for field extraction, searching for recommendations, flagging fields, and identifying missing fields to complete document processing.
+    >The Document Intelligence Workspace is used for field extraction, searching for recommendations, flagging fields, and identifying missing fields to complete document processing.
 
 1. On the right panel, expand the **Fields** section and click on any field (these are the same 3 fields you saw in the Document Intelligence use case page on the **Fields** related list)
 
@@ -114,11 +129,10 @@ The second part walks through the processing of the business license using Docum
 
     >(Optional) Enter any word you see from the business license image, and hover on it under the list. This is how you would manually train the AI model, and would be part of the data set once this document in submitted by clicking the button on the top right.
 
-1. Close this browser tab without submitting
+1. Close this browser tab without submitting, you should be on the **Business License** browser tab
 
-1. Ensure you are on the **Business License** browser tab
 
-1. If the modal is still open, close it
+1. If the modal is open, close it
 
 1. Click the **Integrations** tab (1)
 

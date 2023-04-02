@@ -60,38 +60,32 @@ In this final exercise, we will be testing what we built. We will be processing 
 
     ![relative](images/recordlist.png)
 
-1. On the next record screen, the fields (Business name, License number, Expiration date) should automatically be populated once the document has been processed (note: this can take up to 3 minutes to process)
+1. On the next record screen, the fields (Business name, License number, Expiration date) should automatically be populated once the document has been processed by Document Intelligence (note: this is simulated and can take up to 3 minutes to process)
 
-1. Click the **Bluth Co Business License** attachment on the right
+1. Confirm that the **Bluth Co Business License** attachment is present on the right
 
     ![relative](images/attscreen.png)
-
-1. An overlay screen showing the attachment will appear. Check the details and close the screen on the top right
-
-    ![relative](images/closeatta.png)
 
 1. Click the **Playbook** icon on the far right of the screen, under attachments
 
     ![relative](images/clickpb.png)
 
-1. The sidebar will load the playbook (You will have to expand the panel by dragging the divider all the way to the left)
+1. The playbook will load (You will have to expand the panel by dragging the divider all the way to the left)
 
     ![relative](images/dragdivider.png)
 
 1. Recall how we designed this process in **Process Automation Designer** in Exercise 4
 
-1. Click **Create Task** to assign the ESG check task to Abel Tuter
+1. If your document has not finished processing, you will have to wait till it is done and before the playbook will progress
+
+1. Once the Assign ESG check step is available, click **Create Task** to assign the ESG check task to Abel Tuter
 
     ![relative](images/createtask2.png)
 
-1. You can expand the new task to see the details of the task created
+1. You can expand the new task to see the details of the task created by clicking the expand arrow
 
     ![relative](images/assessmentass.png)
 
 Congratulations, you've completed the lab! What you've just experienced are some of the tools with the Hyperautomation toolbox on the ServiceNow platform. This is only the beginning on what's possible, and there are many more tools that you can explore to further automate processes, such as Process Optimization, Predictive Intelligence, Performance Analytics, Decision Builder, etc.
 
 Where will your Hyperautomation journey take you next?
-
-
-
-

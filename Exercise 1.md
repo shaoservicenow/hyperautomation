@@ -14,9 +14,16 @@ We start off by understanding how this automation request was submitted. One of 
 
 Automation Center enables organizations to discover, prioritize, and manage automation requests from different sources through the full life cycle in a single workspace. Let's progress this automation request.
 
+
 1. Under **All**, search and navigate to **Automation Center Home**
 
     ![relative](images/authome.png)
+
+1. Click on the date range, then select **YTD**, this will filter the data to update widgets
+
+    ![relative](images/ytd.png)
+
+    >Note: These are all demo data and might not be up to date. In a production instance, these will be tracked in real time across all onboarded automation tools
 
 1. Take a short moment to look around and orientate yourself with the Automation Center workspace
 
@@ -26,12 +33,20 @@ Automation Center enables organizations to discover, prioritize, and manage auto
 
     ![relative](images/aeworkspace.png)
 
-    Quickly review the record. You will notice that there are multiple fields filled in. These different fields will allow you to calculate the value of the automations that we will implement, and will impact the metrics on the workspace dashboard
+1. Review the record. You will notice that there two different sections
+
+1. The **Automation Request** section are the details that were created from the business user
+
+1. The second section, **Additional Details**, contain the information to derive the financial impact of the planned automation to implement, and will cascade down to different metrics we see on the home page
+
+1. Assume that you have already interviewed the supplier management team, and these are the value projections. You now have a way to track the success of this automation as it is deployed and in use
+
+    ![relative](images/adddetails.png)
 
 1. Click **Move to In progress** on the top right of the form.
 
     ![relative](images/inprog.png)
 
-That's it for exercise 1! Automation Center will now be your hyperautomation dashboard to track and measure all automation activities within Nintech Co. Now let's get to the actual tools used to automate this process.
+That's it for exercise 1! Automation Center will now be your hyperautomation dashboard to track and measure all automation activities within Nintech Co. Now let's get to the actual tools used to automate this process and deliver on the request.
 
 ### ***You can now add Automation Center to your Hyperautomation toolbox.***
