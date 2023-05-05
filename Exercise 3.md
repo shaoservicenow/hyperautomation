@@ -8,7 +8,7 @@ nav_order: 4
 
 During the discovery interviews with the Supplier Management team, it was often mentioned that they spend a significant amount of time checking the supplier's business registration against the local business registries. This requires them to manually log into the business license portal and to pull out the license information and manually verify one by one. Fortunately, the business license registry offers an API to get information from each license number that we can use to make this process seamless, which we will use in Integration Hub.
 
-![relative](images/licenselookupapi.png)
+![](images/licenselookupapi.png)
 
 > In the lab, we will simulate calling a simulated API, which is modeled after an actual API provider: License Lookup. Check it out here: https://apis.licenselookup.org/business-license-search-api/
 
@@ -18,19 +18,19 @@ We first have to add a field to our custom **Business License** table to mark wh
 
 1. Under **All**, search and navigate to **App Engine Studio**
 
-    ![relative](images/openaes.png)
+    ![](images/openaes.png)
 
 1. In the **My recent apps** section, click **Supplier Management**
 
-    ![relative](images/openapp.png)
+    ![](images/openapp.png)
 
 1. Under **Data**, click the **Business License** table
 
-    ![relative](images/bltable.png)
+    ![](images/bltable.png)
 
 1. In the Table Builder view, click **+ Add new field**
 
-    ![relative](images/addnewfield.png)
+    ![](images/addnewfield.png)
 
 1. Under **Column label**, enter **Registry verified** (1)
 
@@ -38,9 +38,9 @@ We first have to add a field to our custom **Business License** table to mark wh
 
 1. Click **Save** on the top right of Table Builder (3)
 
-    ![relative](images/registryverified.png)
+    ![](images/registryverified.png)
 
-### ***Table builder comes standard in every Hyperautomation toolbox. Make sure you know how to use it effectively to construct the foundations of your applications: Data Schema***
+### ***Table builder comes standard in every Hyperautomation toolbox. Make sure you know how to use it effectively to construct the foundations of your applications.***
 
 ## Creating a custom action to connect via API
 
@@ -50,13 +50,13 @@ Now that we have the **Registry verified** field to indicate whether a record ha
 
 1. Under **All**, search and navigate to **Flow Designer**
 
-    ![relative](images/fdopen.png)
+    ![](images/fdopen.png)
 
 1. Flow Designer will open in a new browser tab
 
 1. On the top right of the screen, click **New**, then click **Action**
 
-    ![relative](images/action.png)
+    ![](images/action.png)
 
 1. Under **Action name**, enter **Lookup license details**
 
@@ -64,7 +64,7 @@ Now that we have the **Registry verified** field to indicate whether a record ha
 
 1. Click **Submit**
 
-    ![relative](images/actiondetails.png)
+    ![](images/actiondetails.png)
 
 1. Click **Create Input** (1)
 
@@ -74,15 +74,15 @@ Now that we have the **Registry verified** field to indicate whether a record ha
 
 1. Click **Save** on the top right (4)
 
-    ![relative](images/licnumaction.png)
+    ![](images/licnumaction.png)
 
 1. Click **Add new step icon** on the left side of the screen, in between **Inputs** and **Error Evaluation**
 
-    ![relative](images/addstep.png)
+    ![](images/addstep.png)
 
 1. In the pop-up, search **rest**, and select the **REST** step
 
-    ![relative](images/selectrest.png)
+    ![](images/selectrest.png)
 
 1. On the new REST step action screen, change **Connection** to **Define Connection Inline** (1)
 
@@ -90,13 +90,13 @@ Now that we have the **Registry verified** field to indicate whether a record ha
 
     >Note: This is a mocked up API service that stores a database of license records
 
-    ![relative](images/connectiondetails.png)
+    ![](images/connectiondetails.png)
 
 1. Under **Resource Path**, enter **/licenselookup/licenses/** (1)
 
 1. From the right Data panel, drag and drop the **License number** data pill onto the end of the string, after **/licenselookup/licenses/** (2)
 
-    ![relative](images/draglic.png)
+    ![](images/draglic.png)
 
 1. Click **Save**
 
@@ -106,41 +106,41 @@ Now that we have the **Registry verified** field to indicate whether a record ha
 
 1. Click **Run Test**
 
-    ![relative](images/testnumber.png)
+    ![](images/testnumber.png)
 
 1. Once the processing is complete, click **Your test has finished running. View the Action execution details.**
 
-    ![relative](images/testok.png)
+    ![](images/testok.png)
 
 1. You should be directed to the **Execution Details** tab
 
 1. Scroll down and expand **Steps**
 
-    ![relative](images/expandsteps.png)
+    ![](images/expandsteps.png)
 
 1. Scroll down until you see **Response Body**, then click on the return value
 
-    ![relative](images/returnbody.png)
+    ![](images/returnbody.png)
 
 1. In the pop-up modal, select everything in the box and copy it to clipboard (Ctrl+c for PC or Cmd+c for Mac)
 
-    ![relative](images/copyall.png)
+    ![](images/copyall.png)
 
 1. Close this pop-up
 
 1. Return to the **Lookup license details** tab by clicking on it
 
-    ![relative](images/returntoaction.png)
+    ![](images/returntoaction.png)
 
 1. Close the **Test action** pop-up
 
 1. Click **Add new step icon** on the left side of the screen, in between **REST step** and **Error Evaluation**
 
-    ![relative](images/resterror.png)
+    ![](images/resterror.png)
 
 1. Search and click **JSON Parser**
 
-    ![relative](images/parsestep.png)
+    ![](images/parsestep.png)
 
 1. Drag and drop **Response Body** from the right sidebar onto **Source data** field (1)
 
@@ -148,7 +148,7 @@ Now that we have the **Registry verified** field to indicate whether a record ha
 
 1. Click **Generate Target** (3)
 
-    ![relative](images/jsonstep.png)
+    ![](images/jsonstep.png)
 
 1. Click **Save** on the top right of the screen
 
@@ -156,7 +156,7 @@ Now that we have the **Registry verified** field to indicate whether a record ha
 
 1. Click **Create Output** (2)
 
-    ![relative](images/output.png)
+    ![](images/output.png)
 
 1. Change the Label **variable** to **Business name** (1)
 
@@ -164,13 +164,13 @@ Now that we have the **Registry verified** field to indicate whether a record ha
 
 1. Click **Create Output**
 
-    ![relative](images/output1.png)
+    ![](images/output1.png)
 
 1. For the new output, Label is **Expiration date** and Name is **expiration_date**, change **Type** to **Date** (1)
 
 1. Click **Exit Edit Mode** (2)
 
-    ![relative](images/exitedit.png)
+    ![](images/exitedit.png)
 
 1. Expand the **root** data pill under **JSON Parser step** on the right sidebar
 
@@ -178,7 +178,7 @@ Now that we have the **Registry verified** field to indicate whether a record ha
 
 1. Do the same again with **expiration-date** onto **Expiration date** field
 
-    ![relative](images/bned.png)
+    ![](images/bned.png)
 
 1. Click **Save**
 
@@ -190,7 +190,7 @@ Now that we have the **Registry verified** field to indicate whether a record ha
 
 1. In the **Execution Details** tab, do you see **Business name** and **Expiration date** populated under **Output Data**?
 
-    ![relative](images/completetest.png)
+    ![](images/completetest.png)
 
 1. Navigate back to the **Lookup license details** tab
 
@@ -198,7 +198,7 @@ Now that we have the **Registry verified** field to indicate whether a record ha
 
 1. Click **Publish**
 
-    ![relative](images/pubaction.png)
+    ![](images/pubaction.png)
 
 ## Create a flow to use the API action
 
@@ -206,11 +206,11 @@ Now that we have the **Registry verified** field to indicate whether a record ha
 
 1. Click **Add** under **Logic and automation**
 
-    ![relative](images/apphome.png)
+    ![](images/apphome.png)
 
 1. Click **Flow**
 
-    ![relative](images/createflow.png)
+    ![](images/createflow.png)
 
 1. On the next screen, click **Build from scratch**
 
@@ -218,7 +218,7 @@ Now that we have the **Registry verified** field to indicate whether a record ha
 
 1. Under **Description**, enter **Call the business license lookup API to verify a supplier business license**
 
-    ![relative](images/verifylicenseflow.png)
+    ![](images/verifylicenseflow.png)
 
 1. Click **Continue**
 
@@ -228,11 +228,11 @@ Now that we have the **Registry verified** field to indicate whether a record ha
 
 1. Click **Add a trigger**
 
-    ![relative](images/addtrigger.png)
+    ![](images/addtrigger.png)
 
 1. We want this flow to be triggered when a record on our Business License table is updated. Choose **Updated** under the **Record** section
 
-    ![relative](images/clickupdate.png)
+    ![](images/clickupdate.png)
 
     > Our trigger condition would be whenever Document Intelligence has processed a document as we saw in Exercise 2. This would be where the Business License Number has been extracted from the attachment.
 
@@ -248,7 +248,7 @@ Now that we have the **Registry verified** field to indicate whether a record ha
 
 1. Click **Done** (4)
 
-    ![relative](images/updatedetails.png)
+    ![](images/updatedetails.png)
 
 1. Click **Save** on the top right (When working on a flow, save often!)
 
@@ -260,11 +260,11 @@ Now that we have the **Registry verified** field to indicate whether a record ha
 
 1. Click **Lookup license details** (this is the action we had just created)
 
-    ![relative](images/liclookupapi.png)
+    ![](images/liclookupapi.png)
 
 1. From the right data panel, expand **Business License Record**, then drag and drop **License number** onto the **License number** field
 
-    ![relative](images/poplic.png)
+    ![](images/poplic.png)
 
     > We are passing the license number from our Business License record into the API to retrieve information
 
@@ -272,7 +272,7 @@ Now that we have the **Registry verified** field to indicate whether a record ha
 
 1. On the right data panel, examine the **1 - Lookup license details** data section. The two outputs, **Business name** and **Expiration date** were our outputs defined from the API call we created
 
-    ![relative](images/outputaction.png)
+    ![](images/outputaction.png)
 
     > From these outputs we would like to validate back against the business license that the supplier submitted. This is meant to be illustrative, but you can continue to build additional verification logic if you choose.
 
@@ -280,7 +280,7 @@ Now that we have the **Registry verified** field to indicate whether a record ha
 
 1. Cick **Flow Logic**, then click **If**
 
-    ![relative](images/iflogic.png)
+    ![](images/iflogic.png)
 
 1. Under **Condition Label**, enter **Business name match**
 
@@ -288,23 +288,23 @@ Now that we have the **Registry verified** field to indicate whether a record ha
 
 1. The operator should be left default as **is** (2)
 
-    ![relative](images/biznamematch1.png)
+    ![](images/biznamematch1.png)
 
 1. From **1 - Business License Search**, drag and drop the **Business name** data pill onto the next field
 
-    ![relative](images/namematch.png)
+    ![](images/namematch.png)
 
 1. Click **Done**
 
 1. Under the **If** branch, click **Action**
 
-    ![relative](images/branchaction.png)
+    ![](images/branchaction.png)
 
 1. Search **update record**
 
 1. Within the **ServiceNow Core** spoke, click **Update Record**
 
-    ![relative](images/updaterecord.png)
+    ![](images/updaterecord.png)
 
 1. Drag and drop the **Business License Record** data pill onto **Record** (1)
 
@@ -314,19 +314,19 @@ Now that we have the **Registry verified** field to indicate whether a record ha
 
 1. Check the box next to the **Registry verified** field to mark as true (3)
 
-    ![relative](images/verifystep.png)
+    ![](images/verifystep.png)
 
 1. Click **Test** on the top right of the page
 
-1. In the pop-up, click and select record **BSL001001**
+1. In the pop-up, click and select record **BSL001006**
 
-    ![relative](images/1006.png)
+    ![](images/1006.png)
 
 1. Click the information icon
 
 1. Click **Open Record**
 
-    ![relative](images/openrecord.png)
+    ![](images/openrecord.png)
 
 1. The record will open in a new browser page (The business name should be **Cyberdyne Systems**) Keep the page open
 
@@ -336,13 +336,13 @@ Now that we have the **Registry verified** field to indicate whether a record ha
 
 1. The **Registry verified** checkbox should change to **true**
 
-    ![relative](images/verifytrue.png)
+    ![](images/verifytrue.png)
 
 1. Switch back the the flow designer screen
 
 1. Close the pop-up, and on the top right of the form, click **Activate**
 
-    ![relative](images/activateflow2.png)
+    ![](images/activateflow2.png)
 
 > Challenge exercise: We did not create logic to show whenever the business name does not match. How would you deliver this scenario? Hint - you can create a new field to mark when a business license is not verified by the API, and then trigger an "else" rule that will populate that field. You can test it out with record BSL0001002.
 

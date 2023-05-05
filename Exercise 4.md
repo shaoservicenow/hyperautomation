@@ -10,7 +10,7 @@ Even with automation, there are still activities that the Supplier Management te
 
 Playbooks allow users to interact with a business workflow in real time from within Workspace. Users can utilize Playbook to update records, upload attachments, and complete tasks across multiple workflow activities in line.
 
-![relative](images/pbpreview.png)
+![](images/pbpreview.png)
 
 ## Building in Process Automation Designer
 
@@ -18,11 +18,11 @@ Playbooks allow users to interact with a business workflow in real time from wit
 
 1. Under **All**, search and navigate to **Process Automation Designer**
 
-    ![relative](images/padnav.png)
+    ![](images/padnav.png)
 
 1. In the **Multi-flow processes** list, click **Supplier License Verification**
 
-    ![relative](images/openpad.png)
+    ![](images/openpad.png)
 
     > Note: For this lab, we have already implemented placeholder instructions based on the previous exercises. This is meant to be a quick start to add a new activity.
 
@@ -34,31 +34,31 @@ Playbooks allow users to interact with a business workflow in real time from wit
 
 1. Click **Save** (3)
 
-    ![relative](images/padsteps.png)
+    ![](images/padsteps.png)
 
 1. Under the newly created **ESG assessment** lane, click **Add an activity**
 
-1. In the pop-up, search **wait for condition**, and click **Wait For Condition** under **Commmon Activities**
+1. In the pop-up, search **wait for condition**, and click **Wait For Condition** under **Common Activities**
 
 1. On the right side bar, change **Label** to **Verification complete** (1), then enter description **License verification complete** (2)
 
 1. Click **Automation** (3)
 
-    ![relative](images/verificationdone.png)
+    ![](images/verificationdone.png)
 
 1. On the **Record** field, click the data pill picker (1), expand **Trigger - Business License** (2), click **Business License Record** (3)
 
-    ![relative](images/3cond.png)
+    ![](images/3cond.png)
 
 1. Click **Add Condition**
 
-    ![relative](images/addcond.png)
+    ![](images/addcond.png)
 
 1. On the Modify conditions pop-up, set **Registry verified** to **is true**
 
 1. Click **Modify**
 
-    ![relative](images/regvertreue.png)
+    ![](images/regvertreue.png)
 
 1. Click **Save**
 
@@ -66,7 +66,7 @@ Playbooks allow users to interact with a business workflow in real time from wit
 
 1. In the pop-up, search **create task**, and click **Create Task** under **Commmon Activities**
 
-    ![relative](images/createtask.png)
+    ![](images/createtask.png)
 
 1. On the **Activity properties** side bar that appears, change the **Label** to **Assign ESG check**
 
@@ -74,23 +74,22 @@ Playbooks allow users to interact with a business workflow in real time from wit
 
 1. Click the **Automation** tab (2)
 
-    ![relative](images/fillactivity.png)
+    ![](images/fillactivity.png)
 
 1. Under the **Inputs** section, select **Abel Tuter** under **Assigned To**
 
 1. Under **Short Description**, enter **Conduct ESG check on -** (1), then click the data pill picker (2), expand **Trigger - Business License** (3), expand **Business License Record** (4), click **Business name** (5)
 
-    ![relative](images/dotwalk.png)
+    ![](images/dotwalk.png)
 
 1. Your screen should look like the following
 
-    ![relative](images/completeactivity.png)
+    ![](images/completeactivity.png)
 
 1. Click **Save** (1)
 
 1. On the top right of the screen, click **Activate** (2)
 
-    ![relative](images/activatepad.png)
+    ![](images/activatepad.png)
 
 This exercise was purely illustrative on how you can go further and build playbooks on these process to accelerate the organization's automation agenda. Process Automation Designer is a highly powerful tool that can orchestrate your business processes and flows across stakeholders, departments and more.
-

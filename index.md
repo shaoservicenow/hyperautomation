@@ -7,7 +7,7 @@ permalink: /
 
 # Introduction
 
-![relative](images/projecthyper.png)
+![](images/projecthyper.png)
 
 You are a part of the newly formed "Project: Hyperautomation" team within Nintech Co. In a bid to remain competitive, you have been tasked with automating manual processes that have, for years, slowed the company. You have been presented with a backlog of demands from the various business teams, and now need to deliver on these demands using the ServiceNow platform.
 
@@ -15,4 +15,4 @@ One of these demands is to automate processes within the supplier management dep
 
 You can refer to the end state process flow below:
 
-![relative](images/overallworkflow.png)
+![](images/overallworkflow.png)

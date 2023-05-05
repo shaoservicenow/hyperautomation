@@ -16,13 +16,13 @@ The first part requires us to get the attachments to process via emails from sup
 
 1. Under **All**, search and navigate to **App Engine Studio**
 
-    ![relative](images/openaes.png)
+    ![](images/openaes.png)
 
     > App Engine Studio is a low-code visual development platform that allows citizen developers to create business-critical workflow apps in a complete low-code experience.
 
 1. In the **My recent apps** section, click **Supplier Management**
 
-    ![relative](images/openapp.png)
+    ![](images/openapp.png)
 
 1. If this is your first time within App Engine Studio, have a quick look at the 4 major sections on the **App Home** tab
 
@@ -33,47 +33,47 @@ The first part requires us to get the attachments to process via emails from sup
     | 3 | Logic and automation | Arguably where you will spend the most time during custom application creation. Add Flows, Process Automations, Email notifications and more in this section. You will be building on top of some flows that have been created|
     | 4 | Security | Security is where you will create custom user roles for the application scope. This will not be covered in the context of this lab.|
 
-    ![relative](images/aesexplain.png)
+    ![](images/aesexplain.png)
 
 1. Under **Logic and Automation**, click **Process Supplier Email**
 
-    ![relative](images/openflow.png)
+    ![](images/openflow.png)
 
     A portion of this flow was already built to create a new **Business License** record on the custom table. We now have to complete it to shift email attachments onto the record.
 
 1. Expand the Trigger condition by clicking **Inbound Email**
 
-    ![relative](images/emailtrigger.png)
+    ![](images/emailtrigger.png)
 
-1. Examine and understand the email condition that will trigger the flow (Whenever a new email with the subject containing the keyword "license")
+1. Examine and understand the email condition that will trigger the flow (Whenever a new email is received with its subject containing the keyword "license")
 
 1. The first step of the flow will create a new **Business License** record
 
 1. Click **Add an Action, Flow Logic, or Subflow**
 
-    ![relative](images/addaction1.png)
+    ![](images/addaction1.png)
 
 1. Click **Action**, then search **Move email attachments**
 
 1. Click **Move email attachments to record**
 
-    ![relative](images/moveemail.png)
+    ![](images/moveemail.png)
 
 1. Drag and drop the **Email Record** data pill from the right data panel onto the **Email Record** field
 
 1. Drag and drop the **Business License Record** data pill from the right data panel onto the **Target Record** field
 
-    ![relative](images/dragdrop.png)
+    ![](images/dragdrop.png)
 
 1. The action step will look like this once completed
 
-    ![relative](images/completestep.png)
+    ![](images/completestep.png)
 
 1. Click **Done**
 
 1. Click **Activate** on the top right of the screen
 
-    ![relative](images/activateflow.png)
+    ![](images/activateflow.png)
 
 With this workflow active, any time a new email is received with the keyword license, it would automatically transfer any attachments in the email to a new business license record that is created.
 
@@ -81,21 +81,21 @@ With this workflow active, any time a new email is received with the keyword lic
 
 The second part walks through the processing of the business license using Document Intelligence
 
-> Note: Lab instances are not enabled to connect to ServiceNow training servers for AI/ML, hence the actual training of the document intelligence models has already been processed. This section is meant to simulate how document intelligence would function in a production ready ServiceNow instance with AI/ML enabled.
+> Note: These lab instances are not enabled to connect to ServiceNow training servers for AI/ML, hence the actual training of the document intelligence models has been pre-processed with trained data. This section is meant to simulate how document intelligence would function in a production ready ServiceNow instance with AI/ML training servers connected.
 
 1. Navigate back to the main ServiceNow UI
 
 1. Under **All**, search **Document Intelligence**, then click **Use Cases**
 
-    ![relative](images/usecases.png)
+    ![](images/usecases.png)
 
 1. In the list view, click **Business License**
 
-    ![relative](images/bizlicense.png)
+    ![](images/bizlicense.png)
 
 1. If this is your first time using Document Intelligence, here is a quick explanation of the major components you see.
 
-    ![relative](images/usecasepage.png)
+    ![](images/usecasepage.png)
     
     * Accuracy of Extraction: The Accuracy of Extraction widget shows the average extraction accuracy per time period for the selected use case. Accuracy is defined as the number of times that the AI's top recommendation is the correct answer.
     * Agent effort: The Agent effort widget shows the number of keystrokes that your agents need perform to extract all field values for a document task. This measurement is an average per document task.
@@ -109,11 +109,11 @@ The second part walks through the processing of the business license using Docum
 
 1. Click the first record (2) to open the **Edit the document Task** modal
 
-    ![relative](images/doctask.png)
+    ![](images/doctask.png)
 
 1. On the pop-up modal, click **Open in Document Intelligence**
 
-    ![relative](images/docintelmodal.png)
+    ![](images/docintelmodal.png)
 
 1. A new tab will open, with the Document Intelligence Workspace loaded
 
@@ -121,7 +121,7 @@ The second part walks through the processing of the business license using Docum
 
 1. On the right panel, expand the **Fields** section and click on any field (these are the same 3 fields you saw in the Document Intelligence use case page on the **Fields** related list)
 
-    ![relative](images/docintelscreen.png)
+    ![](images/docintelscreen.png)
 
 1. Notice how there is a percentage score next to each choice in the list. That is the prediction confidence of the extracted value
 
@@ -140,7 +140,7 @@ The second part walks through the processing of the business license using Docum
 
 1. Click **DocIntel Task Processing Flow - Business License - Business License Process Task** (2)
 
-    ![relative](images/integrations.png)
+    ![](images/integrations.png)
 
 1. A new tab will open with Flow Designer
 
@@ -148,20 +148,20 @@ The second part walks through the processing of the business license using Docum
 
     > Explanation: Whenever a Business License record is created, it will create a Document Intelligence task to process the attachments against the record. If you recall in the first half of this exercise, the supplier's inbound email containing the attachment of the business license will then trigger this flow, dynamically processing these tasks everytime an email is received.
 
-    ![relative](images/processtask.png)
+    ![](images/processtask.png)
 
 1. Close the browser tab and ensure you are back on the **Business License** use case screen
 
 1. This time, click the **DocIntel Extract Values Flow - Business License - Business License Extract Values** flow
 
-    ![relative](images/extractvalues.png)
+    ![](images/extractvalues.png)
 
 1. On this flow, are you able to decipher what it does on your own? (Hint: It is triggered after the **Process Task** flow)
 
-    ![relative](images/extractvalueflow.png)
+    ![](images/extractvalueflow.png)
 
 1. Close the browser tab and retun to the **Business License** use case screen
 
-Well done! In this exercise, you have automated the incoming supplier business license requests by creating an email flow to process the email and extract the attachments, and then understand how the attachment will be automatically processed by Document Intelligence. This will go a long way in saving the manual effort of the Supplier Management team and allow them to expand to other document types and use cases.
+Well done! In this exercise, you have automated the incoming supplier business license records by creating an email flow to process the email and extract the attachments, and then understand how the attachment will be automatically processed by Document Intelligence. This will go a long way in saving the manual effort of the Supplier Management team and allow them to expand to other document types and use cases.
 
 ### ***Go ahead and put Document Intelligence in the AI/ML tray of your Hyperautomation Toolbox***
