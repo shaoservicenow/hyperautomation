@@ -165,3 +165,6 @@ The second part walks through the processing of the business license using Docum
 Well done! In this exercise, you have automated the incoming supplier business license records by creating an email flow to process the email and extract the attachments, and then understand how the attachment will be automatically processed by Document Intelligence. This will go a long way in saving the manual effort of the Supplier Management team and allow them to expand to other document types and use cases.
 
 ### ***Go ahead and put Document Intelligence in the AI/ML tray of your Hyperautomation Toolbox***
+
+[Previous exercise](https://shaoservicenow.github.io/hyperautomation/Exercise%201.html){: .btn .mr-4 }
+[Next exercise](https://shaoservicenow.github.io/hyperautomation/Exercise%203.html){: .btn .btn-purple }

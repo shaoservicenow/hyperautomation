@@ -96,3 +96,5 @@ Automation Center enables organizations to discover, prioritize, and manage auto
 That's it for exercise 1! Automation Center will now be your hyperautomation dashboard to track and measure all automation activities within Nintech Co. You should be using it to track the statuses of all your automation tasks throughout this lab. Now let's get to the actual tools used to automate this process and deliver on the request.
 
 ### ***You can now add Automation Center to your Hyperautomation toolbox.***
+
+[Next exercise](https://shaoservicenow.github.io/hyperautomation/Exercise%202.html){: .btn .btn-purple }

@@ -93,3 +93,6 @@ Playbooks allow users to interact with a business workflow in real time from wit
     ![](images/activatepad.png)
 
 This exercise was purely illustrative on how you can go further and build playbooks on these process to accelerate the organization's automation agenda. Process Automation Designer is a highly powerful tool that can orchestrate your business processes and flows across stakeholders, departments and more.
+
+[Previous exercise](https://shaoservicenow.github.io/hyperautomation/Exercise%203.html){: .btn .mr-4 }
+[Next exercise](https://shaoservicenow.github.io/hyperautomation/Exercise%205.html){: .btn .btn-purple }

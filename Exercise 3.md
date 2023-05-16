@@ -347,3 +347,6 @@ Now that we have the **Registry verified** field to indicate whether a record ha
 > Challenge exercise: We did not create logic to show whenever the business name does not match. How would you deliver this scenario? Hint - you can create a new field to mark when a business license is not verified by the API, and then trigger an "else" rule that will populate that field. You can test it out with record BSL0001002.
 
 Great job on making it to this point. In this exercise, we used a custom integration through Integration Hub to verify the business license. So far, we have successfully managed to automate the retrieval, extraction and verification of supplier business licenses without any manual intervention! What used to be a very repetitive, boring task, which took Nintech Co. hours of work each week is now an automated process that takes less than 2 mins. The Supplier Management team now has more time to focus on work that requires human creativity and personality, like Supplier Relationship Management and working with Suppliers to help meet Nintech Co. and their shared ESG goals.
+
+[Previous exercise](https://shaoservicenow.github.io/hyperautomation/Exercise%202.html){: .btn .mr-4 }
+[Next exercise](https://shaoservicenow.github.io/hyperautomation/Exercise%204.html){: .btn .btn-purple }

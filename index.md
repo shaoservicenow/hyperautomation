@@ -16,3 +16,5 @@ One of these demands is to automate processes within the supplier management dep
 You can refer to the end state process flow below:
 
 ![](images/overallworkflow.png)
+
+[Start!](https://shaoservicenow.github.io/hyperautomation/Exercise%201.html){: .btn .btn-purple }
