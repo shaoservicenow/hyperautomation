@@ -4,7 +4,7 @@ title: Exercise 2 Doc Intel
 nav_order: 3
 ---
 
-# Exercise 2: Document Intelligence
+# Exercise 2: Document Intelligence (20mins)
 
 One of the biggest challenges in Nintech's supplier management process is keeping track of and processing business licenses. Nintech tracks these licenses manually on separate excel spreadsheets, and when suppliers email in new certificates, it is often overlooked and results in compliance risk. In this exercise, we will automate this process by using Document Intelligence to process the licenses using machine vision.
 

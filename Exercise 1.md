@@ -4,7 +4,7 @@ title: Exercise 1 Automation Center
 nav_order: 2
 ---
 
-# Exercise 1: Automation Center
+# Exercise 1: Automation Center (10mins)
 
 We start off by understanding how this automation request was submitted. One of your colleagues within the Supplier Management function in Finance went to the Employee Center to submit an Automation Request. You can see how the form was filled and submitted in the image below.
 
