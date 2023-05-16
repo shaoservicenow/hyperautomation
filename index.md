@@ -17,4 +17,6 @@ You can refer to the end state process flow below:
 
 ![](images/overallworkflow.png)
 
+*Note: This lab is expected to take 90 minutes to complete. All exercises must be completed in sequence.*
+
 [Start!](https://shaoservicenow.github.io/hyperautomation/Exercise%201.html){: .btn .btn-purple }

@@ -4,7 +4,7 @@ title: Exercise 3 Integration Hub
 nav_order: 4
 ---
 
-# Exercise 3: Integration Hub
+# Exercise 3: Integration Hub (30mins)
 
 During the discovery interviews with the Supplier Management team, it was often mentioned that they spend a significant amount of time checking the supplier's business registration against the local business registries. This requires them to manually log into the business license portal and to pull out the license information and manually verify one by one. Fortunately, the business license registry offers an API to get information from each license number that we can use to make this process seamless, which we will use in Integration Hub.
 

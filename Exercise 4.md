@@ -4,7 +4,7 @@ title: Exercise 4 Process Automation Designer
 nav_order: 5
 ---
 
-# Exercise 4: Process Automation Designer
+# Exercise 4: Process Automation Designer (15mins)
 
 Even with automation, there are still activities that the Supplier Management team has to manually oversee which cannot be avoided. One of these processes is to check the ESG compliance of suppliers. In this exercise, we will be building on top of a playbook to assign a task to the ESG compliance team so that a suppliers commitments are tracked and accounted for.
 

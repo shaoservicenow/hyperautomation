@@ -4,7 +4,7 @@ title: Exercise 5 Testing
 nav_order: 6
 ---
 
-# Exercise 5: Testing what we built
+# Exercise 5: Testing what we built (15mins)
 
 In this final exercise, we will be testing what we built. We will be processing this inbound email attachment from Bluth Company.
 
